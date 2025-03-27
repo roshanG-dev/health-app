@@ -1,0 +1,36 @@
+/* Footer.css */
+
+/* Footer Styles */
+.footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content a:hover {
+    color: #ff9900;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 12px;
+    }
+  }
+  
