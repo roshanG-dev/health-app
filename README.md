@@ -6,6 +6,7 @@ This is a React-based web application that helps users explore various health be
 - **Disease Specific Health Benefits**: A page focused on health benefits for various diseases.
 - **Nutrient Specific Pairings**: A page detailing health pairings based on specific nutrients.
 - **FAQ**: A page providing answers to frequently asked questions.
+- **Myth**: A page dedicated to debunking common health myths.
 
 ## Features
 
@@ -16,7 +17,7 @@ This is a React-based web application that helps users explore various health be
 ## Project Structure
 
 - **`src/`**: Contains all the source code files.
-  - **`pages/`**: Contains different React components for individual pages (`HomePage`, `DiseaseSpecificHealthBenefits`, `NutrientSpecificPairings`, and `FAQ`).
+  - **`pages/`**: Contains different React components for individual pages (`HomePage`, `DiseaseSpecificHealthBenefits`, `NutrientSpecificPairings`, `FAQ`, and `Myth`).
   - **`Footer.js`**: The footer component used across all pages.
   - **`App.css`**: Custom styles for the application.
   - **`App.js`**: Main application file where routing and page structure are set up.
@@ -27,8 +28,8 @@ To get started with this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/health-benefits-app.git
-   cd health-benefits-app
+   git clone https://github.com/roshanG-dev/health-app.git
+   cd health-app
    ```
 
 2. **Install dependencies**:
@@ -51,5 +52,4 @@ To get started with this project locally:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
- 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 

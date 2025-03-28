@@ -556,7 +556,7 @@ const diseaseData = [
 
 
 const DiseaseSpecificHealthBenefits = () => {
-    const [selectedDisease, setSelectedDisease] = useState(null);
+    const [selectedDisease, setSelectedDisease] = useState(diseaseData[0]);
 
     // Handle disease selection
     const handleDiseaseSelect = (diseaseName) => {

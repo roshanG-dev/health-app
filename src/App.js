@@ -2,10 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import HomePage from './pages/HomePage.js'; // HomePage Component
 import DiseaseSpecificHealthBenefits from './pages/DiseaseSpecificHealthBenefits.js'; // Disease Specific Health Benefits Page
-import NutrientSpecificPairings from './pages/NutrientSpecificPairings.js'; // Nutrient-Specific Pairings Page
-import FAQ from './pages/FAQ'; // FAQ Page
+import NutrientSpecificPairings from './pages/NutrientSpecificPairings.js'; // Nutrient-Specific Pairings Page 
 import Footer from './Footer.js'; // Footer Component
 import './App.css';
+import MythsAndFacts from './components/MythsAndFacts.js';
+import FAQ from './pages/FAQ.js';
 
 function App() {
   return (
@@ -37,9 +38,17 @@ function App() {
             </li>
             <li>
               <NavLink 
+                to="/myths" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                  Myths 
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink 
                 to="/faq" 
                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                FAQ
+                  FAQ 
               </NavLink>
             </li>
           </ul>
@@ -50,7 +59,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/disease-specific" element={<DiseaseSpecificHealthBenefits />} />
           <Route path="/nutrient-specific" element={<NutrientSpecificPairings />} />
+          <Route path="/myths" element={<MythsAndFacts />} />
           <Route path="/faq" element={<FAQ />} />
+
         </Routes>
 
         {/* Footer */}

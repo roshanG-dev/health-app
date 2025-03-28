@@ -713,8 +713,15 @@ const NutrientSpecificPairings = () => {
     return (
         <div className="nutrient-page">
 
+
             <div className="disease-selector">
                 <label htmlFor="disease" className="disease-label">Choose a Nutrient-Specific Pairings:</label>
+
+                <p className="disclaimer">
+                    <span className="disclaimer-title">Disclaimer:</span>
+                    <strong> Select a nutrient </strong>
+                    to explore the ideal food pairings. Each nutrient is followed by a list of foods that complement its absorption and effectiveness, including options for veg, non-veg, and vegan diets. This interactive guide aims to provide helpful insights into optimizing nutrition through thoughtful food combinations.
+                </p>
                 <select
                     id="disease"
                     className="disease-select"
@@ -746,6 +753,9 @@ const NutrientSpecificPairings = () => {
                         <li key={index}>{avoidance}</li>
                     ))}
                 </ul>
+
+
+
             </div>
 
         </div>
